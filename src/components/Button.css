@@ -1,0 +1,11 @@
+.button {
+    background-color: greenyellow;
+    font: 1em sans-serif;
+    display: grid;
+    grid-template-columns: 2;
+    
+}
+
+.button > .button2{
+    background-color: salmon;
+}
