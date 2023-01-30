@@ -1,11 +1,13 @@
 .button {
     background-color: greenyellow;
     font: 1em sans-serif;
-    display: grid;
-    grid-template-columns: 2;
+    display: flex;
+    align-items: center;
     
 }
 
 .button > .button2{
     background-color: salmon;
+    max-width: 55vw;
+    margin: auto;
 }
