@@ -2,13 +2,17 @@
 // Component Imports
 import Counter from '../components/Counter';
 import Button from '../components/Button';
-import Characters from '../components/Character';
+import Styles from './styles.css';
+
 const someProps = {
 	count: 0,
 };
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+var date = Date();
+var arr1 = date.split(' ');
+var arr2 = arr1[4];
+
+
 ---
 
 <html lang="en">
@@ -17,24 +21,14 @@ const someProps = {
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 5rem;
-			}
-		</style>
+		<link rel='stylesheet' href={Styles} />
 	</head>
 	<body>
 		<main>
 			<Counter {...someProps} client:visible>
 				<h1>Hello, React!</h1>
 			</Counter>
-			<Button client:load>Hello, Astro!</Button>
-			<Characters></Characters>
+			<Button client:load>{arr2}</Button>
 		</main>
 	</body>
 </html>

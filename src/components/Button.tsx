@@ -4,8 +4,8 @@ import './Button.css';
 const Button =({ children }) => {
     function handleOnClick(){alert('Hola Raul');}
     return(
-        <div className="button">
-            <button className="button2" onClick={handleOnClick}>{ children }</button>
+        <div className="inline-flex w-full p-10">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full content-center m-auto" onClick={handleOnClick}>{ children }</button>
         </div>
     )
 }

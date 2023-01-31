@@ -1,13 +1,12 @@
 .button {
-    background-color: greenyellow;
-    font: 1em sans-serif;
+    font: 5em sans-serif;
     display: flex;
     align-items: center;
     
 }
 
-.button > .button2{
+.button2{
     background-color: salmon;
-    max-width: 55vw;
+    width: 250vw;
     margin: auto;
 }
